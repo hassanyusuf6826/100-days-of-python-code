@@ -1,0 +1,7 @@
+print("Welcome to your know my identity generator")
+name = input("Please tell us your name\n")
+city = input("can you tell us where you live?\n")
+
+identity = name.capitalize() + " " + city.capitalize()
+
+print("If the provided details are true then, you are :", identity)
