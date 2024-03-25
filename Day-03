@@ -1,0 +1,33 @@
+print('''
+**************************************************************************************************       
+    --..,_                     _,.--.
+       `'.'.                .'`__ o  `;__.      cjr
+          '.'.            .'.'`  '---'`  `
+            '.`'--....--'`.'
+              `'--....--'`                          
+***********************************************************************************************
+''')
+
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+
+direction = input('You are at a crossroad, where do you want to go? "left" or "right"?\n').lower()
+
+if direction == "left":
+    action_lake = input('You are at a lake now, do you want to "swim" or "wait"?\n').lower()
+    if action_lake == "wait":
+        door_color = input('By which door are you waiting? "Red", "Blue" or "Yellow"?\n').lower()
+        if door_color == "Yellow":
+            print("You win!")
+        elif door_color == "Red":
+            print("Burned by fire. Game Over")
+        elif door_color == "Blue":
+            print("Game Over. fell into a hole")
+        else:
+            print("Eaten by beast. Game Over")
+
+    else:
+        print("Attacked by a trout. Game over")
+
+else:
+    print("Fall into a hole. Game over")
