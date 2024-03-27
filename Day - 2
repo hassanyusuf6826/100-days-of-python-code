@@ -1,0 +1,17 @@
+# Day 2 project.
+#If the bill was $150.00, split between 5 people, with 12% tip.
+
+#Each person should pay (150.00 / 5) * 1.12 = 33.6
+#Format the result to 2 decimal places = 33.60
+
+bill_amount = 150.00
+number_of_people = 5
+tip_percentage = 12/100
+
+total_amount = bill_amount * (1 + tip_percentage)
+
+individual_amount = total_amount / number_of_people
+
+rounded_individual_amount = "{:.2f}".format(individual_amount)
+
+print(F"Each individual is to pay ${rounded_individual_amount} without any addition of other charges")
